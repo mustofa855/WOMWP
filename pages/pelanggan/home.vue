@@ -11,47 +11,27 @@
       <VendorList />
     </section>
 
-
-
-    <img src="../assets/images/garis-batas.jpg" alt="Garis Batas" class="mx-auto">
+    <img src="../../assets/images/garis-batas.jpg" alt="Garis Batas" class="mx-auto">
 
     <section class="gallery flex flex-col items-center mb-8">
       <h2 class="text-2xl font-bold">Galeri Pernikahan Kami</h2>
       <Gallery />
     </section>
 
-    <img src="../assets/images/garis-batas.jpg" alt="Garis Batas" class="mx-auto">
-
-    <section class="call-to-action flex flex-col items-center border-t-2 text-black py-8">
-        <h2 class="text-2xl font-bold mb-4">Siap untuk Mengatur Pernikahan Impian Anda?</h2>
-        <p class="text-lg text-center mb-4 max-w-xl">
-          Dengan pengalaman kami dan perhatian terhadap detail, kami siap membantu Anda mewujudkan pernikahan yang tak
-          terlupakan.
-          Klik tombol di bawah untuk memulai perjalanan Anda bersama kami.
-        </p>
-        <nuxt-link to="/login"
-          class="btn-primary hover:bg-gray-700 border-2 hover:text-white transition-colors duration-300 px-6 py-3 text-lg rounded-full">
-          Pesan Sekarang
-        </nuxt-link>
-      </section>
-
     <section class="Copyright flex flex-row items-start justify-between mb-8 border-t-2 pt-4 px-8">
       <!-- Bagian Logo MWP dan Ikon Sosial Media -->
       <div class="left-side flex flex-col items-center">
         <!-- Logo MWP -->
         <div class="logo mb-4">
-          <img src="../static/MWP.png" alt="Logo MWP" class="h-48 w-full" />
+          <img src="../../static/MWP.png" alt="Logo MWP" class="h-48 w-full" />
         </div>
 
-
+        
       </div>
 
       <!-- Bagian Alamat MWP -->
-      <div class="address ">
+      <div class="address text-center">
         <p>MWP is Absolutely We Believe</p>
-        <nuxt-link to="/contact" class="hover:text-blue-500 hover:underline">Contact Us</nuxt-link>
-        <br>
-        <nuxt-link to="/login" class="hover:text-blue-500 hover:underline">Book Now!</nuxt-link>
       </div>
     </section>
   </div>
@@ -63,7 +43,7 @@ import Gallery from '~/components/Gallery.vue'
 import CardMUA from '~/components/MUA.vue'
 
 export default {
-  layout: 'umum',
+  layout: 'default2',
   components: {
     VendorList,
     Gallery,
@@ -119,19 +99,16 @@ export default {
   from {
     width: 0;
   }
-
   to {
     width: 100%;
   }
 }
 
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent;
   }
-
   50% {
     border-color: white;
   }
@@ -144,13 +121,11 @@ export default {
 }
 
 .logo img {
-  max-height: 4rem;
-  /* Adjust size as needed */
+  max-height: 4rem; /* Adjust size as needed */
 }
 
 .social-media svg {
-  fill: gray;
-  /* Adjust color as needed */
+  fill: gray; /* Adjust color as needed */
 }
 
 .address {

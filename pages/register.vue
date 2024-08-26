@@ -68,6 +68,7 @@
 
 <script>
 export default {
+    layout: 'umum',
     data() {
         return {
             username: '',

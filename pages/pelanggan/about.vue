@@ -21,12 +21,10 @@
   </template>
   
   <script>
-  import Navbar from '../../components/Navbar.vue'; //import navbar
   
   
   export default {
     components: {
-      Navbar, // Mendaftarkan komponen Navbar
     }
   }
   </script>
